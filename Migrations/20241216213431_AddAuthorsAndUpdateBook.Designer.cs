@@ -4,6 +4,7 @@ using Bogdan_Cristina_Lab2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bogdan_Cristina_Lab2.Migrations
 {
     [DbContext(typeof(Bogdan_Cristina_Lab2Context))]
-    partial class Bogdan_Cristina_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20241216213431_AddAuthorsAndUpdateBook")]
+    partial class AddAuthorsAndUpdateBook
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

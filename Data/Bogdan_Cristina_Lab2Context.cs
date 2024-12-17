@@ -9,13 +9,14 @@ namespace Bogdan_Cristina_Lab2.Data
 {
     public class Bogdan_Cristina_Lab2Context : DbContext
     {
-        public Bogdan_Cristina_Lab2Context (DbContextOptions<Bogdan_Cristina_Lab2Context> options)
+        public Bogdan_Cristina_Lab2Context(DbContextOptions<Bogdan_Cristina_Lab2Context> options)
             : base(options)
         {
         }
 
-        public DbSet<Bogdan_Cristina_Lab2.Models.Book> Book { get; set; } = default!;
-        public DbSet<Bogdan_Cristina_Lab2.Models.Publisher> Publisher { get; set; } = default!;
-        public DbSet<Bogdan_Cristina_Lab2.Models.Author> Author { get; set; } = default!;
+        public DbSet<Book> Book { get; set; }
+        public DbSet<Publisher> Publisher { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

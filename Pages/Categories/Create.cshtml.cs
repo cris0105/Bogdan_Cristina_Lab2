@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Bogdan_Cristina_Lab2.Data;
 using Bogdan_Cristina_Lab2.Models;
 
-namespace Bogdan_Cristina_Lab2.Pages.Authors
+namespace Bogdan_Cristina_Lab2.Pages.Categories
 {
     public class CreateModel : PageModel
     {
